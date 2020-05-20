@@ -1,5 +1,9 @@
 {
-	"templates": [
-
-	]
+	"arguments": {
+		"name": {},
+		"tag": {"default": "{{name}}"}
+	},
+	"templates": {
+		"brick.twig": "{{name}}.brick.js"
+	}
 }
