@@ -11,6 +11,8 @@ export default class {{ class }} extends Brick {
 
 	createViewModel() {}
 
-	onRender() {}
+	onRender() {
+		this.$$('close').on.mouse.click(()=>this.close());
+	}
 
 }

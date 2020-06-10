@@ -2,17 +2,19 @@
 
 	<header>
 		<i class="inverse fal fa-user"></i>
-		<label></label>
+		<label>
+			<button (close)><i class="fas fa-times"></i></button>
+		</label>
 		<nav>
 		</nav>
 	</header>
 
 	<section>
-		{{ tag }}
+		Hello {{ tag }}
 	</section>
 
 	<footer>
-		<button (no) class="primary">Cancel</button>
+		<button (close) class="primary">Cancel</button>
 		<button (ok) class="success">Ok</button>
 	</footer>
 
