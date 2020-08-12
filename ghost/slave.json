@@ -1,0 +1,9 @@
+{
+	"arguments": {
+		"name": {}
+	},
+	"templates": {
+		"ghost.js.twig": "{{ name|paramCase }}.ghost.js",
+		"entity.js.twig": "{{ name|paramCase }}.js"
+	}
+}

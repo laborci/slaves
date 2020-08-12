@@ -1,0 +1,19 @@
+import {Ghost, Repository} from "zengular-util/src/ghost";
+import {{ name }}                from "./{{ name|paramCase }}";
+
+/**
+ * @property { {{ name }}[]} container
+ */
+class {{ name }}Repository extends Repository {
+	constructor() {super({{ name }});}
+	/** @returns { {{ name }}Repository } */ filter(func) {return super.filter(func);}
+	/** @returns { {{ name }}[] } */ get all() {return super.all;}
+	/** @returns { {{ name }} } */ get(id) {return super.get(id);}
+}
+
+/**
+ * @property {int} id
+ */
+export default class {{ name }}Ghost extends Ghost {
+	/** @returns { {{ name }}Repository } */ static get repository() {return typeof this._repository === "undefined" ? this._repository = new {{ name }}Repository() : this._repository;}
+}
